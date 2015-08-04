@@ -1,5 +1,6 @@
 <?php
   require_once('./configStripe.php');
+   header("Access-Control-Allow-Origin: *");
 
   $token  = $_POST['stripeToken'];
   $amount = $_POST['amount'];
